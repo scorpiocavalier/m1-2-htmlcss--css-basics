@@ -9,7 +9,4 @@
 
 - Colors used are `pink` and `fuschia`
 - text size is `5em` for the last line.
-
-
-
-
+- Don't worry if your font looks different
