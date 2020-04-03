@@ -6,17 +6,25 @@ CSS Properties are used to indicate which styles to apply.
 
 ```css
 .mybox {
-    color: #000;
-    border: 1px solid red;
-    background-color: red;
+  color: #000;
+  border: 1px solid red;
+  background-color: red;
 }
 ```
 
 ---
 
 - There are many CSS properties.
-- You can use this [reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index) to see which properties are available.
-- The inspector can also autocomplete the various properties and their respective values.
+- [Big reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index)
+- VS Code can also autocomplete (Demo!)
+
+---
+
+## Google is your friend
+
+The human brain cannot hold the full library of CSS properties and values.
+
+The internet has many very good resources on CSS.
 
 ---
 
@@ -24,32 +32,32 @@ CSS Properties are used to indicate which styles to apply.
 
 Write the CSS to make the cat text blue.
 
-```html
-<p class='canine'>Husky</p>
-<p class='feline'>Felix the Cat</p>
-<p class='canine'>Labrador</p>
-```
-
 ```css
 /* css here */
+```
 
+```html
+<p class="canine">Husky</p>
+<p class="feline">Felix the Cat</p>
+<p class="canine">Labrador</p>
 ```
 
 ---
 
 ### Exercise 2 [🐇](https://codepen.io)
 
-Write the CSS to make the cat text blue.
-
-```html
-<h1 class="animal">Husky</h1>
-<h2 class="animal">Felix the cat</h2>
-<h1 class="animal">Labrador</h1>
-```
+Write the CSS to make sub-headings blue
 
 ```css
 /* css here */
+```
 
+```html
+<h1>Types of animals</h1>
+<h2>Dogs</h2>
+<p>Dogs are animals</p>
+<h2>Cats</h2>
+<p>Cats are also animals</p>
 ```
 
 ---
@@ -58,14 +66,13 @@ Write the CSS to make the cat text blue.
 
 Write the CSS to make the cat text blue.
 
+```css
+/* css here */
+```
+
 ```html
 <p id="royalcat" class="good-boy">Husky</p>
 <p class="royalcat">Felix the cat</p>
-```
-
-```css
-/* css here */
-
 ```
 
 ---
@@ -74,32 +81,36 @@ Write the CSS to make the cat text blue.
 
 Write the CSS to make the dogs text red.
 
+```css
+/* css here */
+```
+
 ```html
 <p class="canine">Husky</p>
 <p class="feline">Felix the cat</p>
 <p class="canine">labrador</p>
 ```
 
-```css
-/* css here */
-
-```
-
 ---
 
 ### Exercise 5 [🐇](https://codepen.io)
 
-Write the CSS to make the dogs text red.
-
-```html
-<h1 class="animal">Husky</h1>
-<h2 class="animal">Felix the cat</h2>
-<h1 class="animal">Labrador</h1>
-```
+Target specifically cat animals, and not categories
 
 ```css
 /* css here */
+```
 
+```html
+<ul class="categories">
+  <li class="cat">Agriculture</li>
+  <li class="cat">Food service</li>
+  <li class="cat">Technology</li>
+</ul>
+
+<p class="animal dog">Husky</p>
+<p class="animal cat">Felix the cat</p>
+<p class="animal dog">Labrador</p>
 ```
 
 ---
@@ -108,16 +119,17 @@ Write the CSS to make the dogs text red.
 
 What color is the `p` element?
 
-`<p class="blue"> hello </p>`
-
 ```css
 .blue {
-    color: blue
+  color: blue;
 }
 p {
-    color: red
+  color: red;
 }
+```
 
+```html
+<p class="blue">hello</p>
 ```
 
 ---
@@ -128,16 +140,16 @@ p {
 
 Every HTML element is a box that has 4 properties.
 
-| property  | notes |
-| --------- | ----- |
-| content   | the content 
-| `padding` | space around content
-| `border`  | border around padding
-| `margin`  | space outside of border
+| property  | notes                   |
+| --------- | ----------------------- |
+| content   | the content             |
+| `padding` | space around content    |
+| `border`  | border around padding   |
+| `margin`  | space outside of border |
 
 ---
 
-<img src='./assets/box_model.jpg' />
+<img src="./assets/box_model.jpg" />
 
 - Each side can be set independently
 
@@ -147,13 +159,13 @@ Every HTML element is a box that has 4 properties.
 | `margin-right`  |
 | `margin-bottom` |
 
---- 
+---
 
 - Shorthand is best
-    - `margin: top | right | bottom | left`
-    - `margin: 20px 10px 5px 0`
-    - `margin: 20px 10px`
-    - `margin: 20px`
+  - `margin: top | right | bottom | left`
+  - `margin: 20px 10px 5px 0`
+  - `margin: 20px 10px`
+  - `margin: 20px`
 
 ---
 
@@ -161,16 +173,18 @@ Every HTML element is a box that has 4 properties.
 
 What is the width and height of this box?
 
-`<p class='greeting'>Hello</p>`
-
 ```css
 .greeting {
-    border-width: 10px;
-    height: 100px;
-    margin: 50px;
-    padding: 25px;
-    width: 100px;
+  border: 10px solid;
+  height: 100px;
+  margin: 50px;
+  padding: 25px;
+  width: 100px;
 }
+```
+
+```html
+<p class="greeting">Hello</p>
 ```
 
 ---
@@ -179,7 +193,7 @@ We can fix this with the `box-sizing` CSS property.
 
 ```css
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 ```
 
@@ -187,7 +201,7 @@ _What is the meaning of `*`?_
 
 ---
 
-<img src='./assets/box_example.png' />
+<img src="./assets/box_example.png" />
 
 ---
 
@@ -222,24 +236,24 @@ _What is the meaning of `*`?_
 
 ### `display: none`
 
-- The element is completely removed! 
+- The element is completely removed!
 
 ---
 
 ### Elements already have their own display behavior
 
 - Block-level elements
-    - `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`, `<p>`
-    - `<ul>`, `<ol>`, `<li>`, `<blockquote>`, `<table>`,
-    - `<form>`
-    - `<div>`
+  - `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`, `<p>`
+  - `<ul>`, `<ol>`, `<li>`, `<blockquote>`, `<table>`,
+  - `<form>`
+  - `<div>`
 
---- 
+---
 
 - Inline elements
-    - `<img>`, `<a>`, `<span>`, `<button>`
-    - `<input>`, `<label>`, `<select>`, `<textarea>`
-    - `<abbr>` 
+  - `<img>`, `<a>`, `<span>`, `<button>`
+  - `<input>`, `<label>`, `<select>`, `<textarea>`
+  - `<abbr>`
 
 [Source](https://www.w3resource.com/html/HTML-block-level-and-inline-elements.php)
 
@@ -251,9 +265,7 @@ _What is the meaning of `*`?_
 
 ---
 
-### [`display: none`](https://www.w3schools.com/css/tryit.asp?filename=trycss_display_none)
-### vs. 
-### [`visibility: hidden`](https://www.w3schools.com/css/tryit.asp?filename=trycss_visibility_hidden)
+`display: none` vs `visibility: hidden`
 
 ---
 
@@ -293,30 +305,11 @@ _What is the meaning of `*`?_
 - It is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
 - If an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
 
-Note: When using this property, you will need to set the parent's position as well, anything but `static`.
-
 ---
 
-#### Example [🐇](https://codepen.io)
+Note: When using the `absolute` property, you will need to set the parent's position as well, anything but `static`.
 
-```html
-<div class="container">
-   <p>Hey!</p>
-   <p class="child">there!</div>
-</div>
-```
-
-```css
-.container {
-    position: relative;
-    height: 400px;
-    border: 1px solid;
-}
-.child {
-    position: absolute;
-    bottom: 0px;
-}
-```
+https://codepen.io/joshwcomeau/pen/OJVYZZO
 
 ---
 
@@ -332,40 +325,50 @@ Note: When using this property, you will need to set the parent's position as we
 
 ## Flexbox
 
-- Flexbox is a wonderful way of positioning elements on a webpage.
-- Once you learn Flexbox, you will _never_ type the `float` again!
+Flexbox is a wonderful way of positioning elements on a webpage.
+
+It has a bit of a learning curve though
 
 ---
 
-### The basics
+### The problem
 
-- Give the parent container the property `display: flex`. 
+What if we want two block-level elements to sit side by side?
 
-This automagically set all of the items inside the container to be side-by-side.
+What if they should take up equal amounts of space?
 
 ---
 
-### The basics II
+### The solution
+
+- Give the parent container the property `display: flex`.
+
+You can control how they should be sized.
+
+Demo: https://codepen.io/joshwcomeau/pen/abOrjoV
+
+---
+
+### Flex properties
 
 There are other properties you can give the parent container:
 
-| property          | notes |
-| ----------------- | ----- |
-| `flex-direction`  | default is `row`
-| `flex-wrap`       | default is `nowrap`
-| `justify-content` | main axis
-| `align-items`     | secondary axis
-| `align-content`   | needs mult. rows
+| property          | notes               |
+| ----------------- | ------------------- |
+| `flex-direction`  | default is `row`    |
+| `flex-wrap`       | default is `nowrap` |
+| `justify-content` | main axis           |
+| `align-items`     | secondary axis      |
 
 ---
 
-The most common recipe for a container is 
+The most common recipe for a container is
 
 ```css
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 ```
 
@@ -373,41 +376,21 @@ The most common recipe for a container is
 
 ### Children can have `flex` properties too!
 
-| property      | notes |
-| ------------- | ----- |
-| `flex-grow`   | takes up space proportionally
-| `flex-shrink` | shrink if possible
-| `flex-basis`  | default size
-| `order`       | modify source order
-
----
-
-Recommended Shorthand notation:
-
-`flex: flex-grow | flex-shrink | flex-basis` 
-
-```css
-.child {
-    flex: 0 1 auto; // This is the default
-}
-.child-2 {
-    flex: 1; // this is actually equivalent to flex: 1 1 0;
-}
-```
----
-
-[Live demo](https://www.w3schools.com/code/tryit.asp?filename=G7QW3EFHVQYT)
+| property | notes                         |
+| -------- | ----------------------------- |
+| `flex`   | allow items to grow or shrink |
+| `order`  | modify source order           |
 
 ---
 
 ### Additional Resources
 
-- [Complete Guide to Flexbox]()
+- [Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [Flexbox.help](https://flexbox.help/)
 - [Flexbox.ninja](https://flexbox.ninja/)
 
 ---
 
-<img src='./assets/debugging_css.gif' />
+<img src="./assets/debugging_css.gif" />
 
 ---
