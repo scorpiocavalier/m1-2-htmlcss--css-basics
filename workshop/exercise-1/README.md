@@ -5,7 +5,7 @@
 - Open the provided index.html file in the browser.
 - Modify the `style.css` file to match the following image
 
-![exercise-1 goal](../../assets/ex-1-goal.png)
+![exercise-1 goal](../../__lecture/assets/ex-1-goal.png)
 
 - background color is `blue`
 - properties used: `padding`, `border`, `background`, `color`, `border-radius`.

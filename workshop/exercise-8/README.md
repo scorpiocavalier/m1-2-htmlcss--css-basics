@@ -2,10 +2,9 @@
 
 ## Exercise 8
 
-Update the CSS file to reproduce the following:  
+Update the CSS file to reproduce the following:
 
-![exercise-8 goal](../../assets/ex-8-goal.png)
-
+![exercise-8 goal](../../__lecture/assets/ex-8-goal.png)
 
 ### Properties Needed
 

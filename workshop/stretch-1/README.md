@@ -4,7 +4,7 @@
 
 Using CSS, create a button that animates on hover:
 
-![stretch-1 goal](../../assets/stretch-1-goal.gif)
+![stretch-1 goal](../../__lecture/assets/stretch-1-goal.gif)
 
 - It should color to a dark-blue when focused. It should **not** have the typical "focus ring" (blue outline on MacOS, dotted outline on Windows).
 - It should shrink when the mouse is held down on it.
@@ -18,7 +18,7 @@ Using CSS, create a button that animates on hover:
 
 ### Resources
 
-https://css-tricks.com/almanac/selectors/a/active/
-https://css-tricks.com/almanac/selectors/f/focus/
-https://css-tricks.com/almanac/properties/t/transition/
-https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale
+- https://css-tricks.com/almanac/selectors/a/active/
+- https://css-tricks.com/almanac/selectors/f/focus/
+- https://css-tricks.com/almanac/properties/t/transition/
+- https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale

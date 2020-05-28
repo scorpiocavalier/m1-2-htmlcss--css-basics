@@ -1,34 +1,36 @@
-h1, p, div, h2  {
-    margin: 0;
+h1,
+p,
+div,
+h2 {
+  margin: 0;
 }
 
 .centered {
-    text-align: center;
+  text-align: center;
 }
 
 #title {
-    background-color: gray;
-    font-size: 3rem;
+  background-color: gray;
+  font-size: 3rem;
 }
 
 #subtitle {
-    background-color: gray;
-    font-size: 1.5rem;
+  background-color: gray;
+  font-size: 1.5rem;
 }
 
 div {
-    background-color: gray;
+  background-color: gray;
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 #content {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .monospaced {
-    font-family: monospace;
+  font-family: monospace;
 }
-  

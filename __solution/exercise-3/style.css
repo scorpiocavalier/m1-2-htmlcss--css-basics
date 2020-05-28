@@ -1,16 +1,16 @@
 .title {
-    text-align: center;
+  text-align: center;
 }
 
 .subtitle {
-    font-size: 1.5em;
-    text-align: center;
+  font-size: 1.5em;
+  text-align: center;
 }
 
 .content {
-    font-family: 'Comic Sans MS';
+  font-family: 'Comic Sans MS';
 }
 
 .emph {
-    font-style: italic;
+  font-style: italic;
 }
