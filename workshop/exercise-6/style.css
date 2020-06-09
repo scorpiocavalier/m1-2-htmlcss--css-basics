@@ -19,23 +19,36 @@ li {
 /* ADD CSS BELOW */
 
 body {
+  font-family: 'Bangers', 'Yanone Kaffee';
 }
 
 h1,
 h2 {
+  text-align: center;
 }
 
 h1 {
+  padding: 20px 0px;
+  font-size: 2em;
 }
 
 h2 {
+  padding: 12px 0px;
 }
 
 .row {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .col {
+  border: 1px dashed gray;
+  list-style-type: none;
+  padding: 0px 12px 12px 12px;
+  background-color: lightgray;
 }
 
 .image {
+  max-width: 100%;
+  max-height: 200px;
 }
